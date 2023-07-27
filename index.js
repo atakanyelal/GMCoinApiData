@@ -33,7 +33,6 @@ app.listen(8000, () => StartServer());
 
   app.get('/', (req, res) => {
     res.send("api Main page");
-    StartServer();
   });
   
   app.get('/CirculatinSupply', (req, res) => {

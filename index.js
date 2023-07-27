@@ -20,6 +20,9 @@ var totSupDec = 0;
 var cirSupDec = 0;
 var tresureSupDec = 0;
 
+
+app.listen(3000, () => StartServer());
+
   // Define a GET request handler for the user resource
   app.get('/TotalSupply', (req, res) => {
     GetData(),
@@ -39,7 +42,7 @@ var tresureSupDec = 0;
     tresureSup = 0;
   })
 
-  app.listen(3000, () => StartServer());
+
   
 const options = {
     method: 'POST',

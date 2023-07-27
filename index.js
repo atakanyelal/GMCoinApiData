@@ -20,10 +20,14 @@ var totSupDec = 0;
 var cirSupDec = 0;
 var tresureSupDec = 0;
 
-console.log("hi");
-alert("hi");
 
 
+function test(){
+  console.log("hi");
+  alert("hi");
+}
+
+test();
 
   // Define a GET request handler for the user resource
   app.get('/TotalSupply', (req, res) => {

@@ -23,7 +23,7 @@ var tresureSupDec = 0;
 console.log("hi");
 alert("hi");
 
-app.listen(8000, () => StartServer());
+
 
   // Define a GET request handler for the user resource
   app.get('/TotalSupply', (req, res) => {

@@ -26,11 +26,12 @@ app.listen(3000, () => StartServer());
   // Define a GET request handler for the user resource
   app.get('/TotalSupply', (req, res) => {
     GetData(),
-    res.send(totSupDec.toString())
+    res.send(totSupDec.toString());
   });
 
   app.get('/', (req, res) => {
     res.send("api Main page");
+    StartServer();
   });
   
   app.get('/CirculatinSupply', (req, res) => {

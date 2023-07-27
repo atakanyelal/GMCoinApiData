@@ -23,22 +23,15 @@ app.listen(8000, () => StartServer());
 
   // Define a GET request handler for the user resource
   app.get('/TotalSupply', (req, res) => {
-    GetData(),
     res.send(totSupDec.toString());
   });
 
   app.get('/', (req, res) => {
     res.send("api Main page");
-    StartServer();
   });
   
   app.get('/CirculatinSupply', (req, res) => {
-    GetCirSup();
-    cirSup = totSup - tresureSup;
-    cirSupDec = cirSup.toString();
-    var cirSupDec = cirSupDec.slice(0, 8) + "." + cirSupDec.slice(8);
     res.send(cirSupDec.toString());
-    tresureSup = 0;
   });
 
 

@@ -27,11 +27,11 @@ app.listen(3000, () => StartServer());
   app.get('/TotalSupply', (req, res) => {
     GetData(),
     res.send(totSupDec.toString())
-  })
+  });
 
   app.get('/', (req, res) => {
     res.send("api Main page");
-  })
+  });
   
   app.get('/CirculatinSupply', (req, res) => {
     GetCirSup();
@@ -40,7 +40,7 @@ app.listen(3000, () => StartServer());
     var cirSupDec = cirSupDec.slice(0, 8) + "." + cirSupDec.slice(8);
     res.send(cirSupDec.toString());
     tresureSup = 0;
-  })
+  });
 
 
   

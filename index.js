@@ -25,7 +25,7 @@ app.listen(3000, () => StartServer());
 
   // Define a GET request handler for the user resource
   app.get('/TotalSupply', (req, res) => {
-    GetData(),
+    GetData();
     res.send(totSupDec.toString());
   });
 

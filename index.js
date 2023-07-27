@@ -25,6 +25,10 @@ var tresureSupDec = 0;
     GetData(),
     res.send(totSupDec.toString())
   })
+
+  app.get('/', (req, res) => {
+    res.send("api Main page");
+  })
   
   app.get('/CirculatinSupply', (req, res) => {
     GetCirSup();

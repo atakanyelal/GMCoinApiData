@@ -31,7 +31,7 @@ app.listen(3000, () => StartServer());
 
   app.get('/', (req, res) => {
     res.send("api Main page");
-    StartServer();
+
   });
   
   app.get('/CirculatinSupply', (req, res) => {

@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
-require('dotenv').config();
 const TronWeb = require('tronweb');
 const HttpProvider = TronWeb.providers.HttpProvider;
 const fullNode = new HttpProvider("https://trongrid.io");

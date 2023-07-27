@@ -21,7 +21,7 @@ var cirSupDec = 0;
 var tresureSupDec = 0;
 
 
-app.listen(3000, () => StartServer());
+//app.listen(3000, () => StartServer());
 
   // Define a GET request handler for the user resource
   app.get('/TotalSupply', (req, res) => {

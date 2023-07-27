@@ -20,6 +20,8 @@ var totSupDec = 0;
 var cirSupDec = 0;
 var tresureSupDec = 0;
 
+console.log("hi");
+alert("hi");
 
 app.listen(8000, () => StartServer());
 
